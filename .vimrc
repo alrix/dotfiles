@@ -84,14 +84,14 @@ endif
 
 " Colorscheme
 set t_Co=256
-set background=light
+set background=dark
 colorscheme PaperColor
 
 set colorcolumn=80,100
 
 "lightline config
 let g:lightline = {
-      \ 'colorscheme': 'PaperColor',
+      "\ 'colorscheme': 'PaperColor',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
