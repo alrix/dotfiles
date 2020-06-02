@@ -47,7 +47,7 @@ set secure
 let iCanHazVundle=1
 let vundle_readme=expand('~/.vim/bundle/vundle/README.md')
 if !filereadable(vundle_readme)
-    echo "Installing Vundle.."
+   echo "Installing Vundle.."
     echo ""
     silent !mkdir -p ~/.vim/bundle
     silent !git clone https://github.com/gmarik/vundle ~/.vim/bundle/vundle
@@ -73,6 +73,10 @@ Plugin 'cakebaker/scss-syntax.vim'
 Plugin 'dense-analysis/ale'
 " Lightline Bar
 Plugin 'itchyny/lightline.vim'
+" Nerdtree
+Plugin 'preservim/nerdtree'
+" Nerdtree git
+Plugin 'Xuyuanp/nerdtree-git-plugin'
 
 
 if iCanHazVundle == 0
@@ -82,12 +86,23 @@ if iCanHazVundle == 0
 endif
 " end of vundle setup
 
+" Toggle Nerdtree
+map <C-n> :NERDTreeToggle<CR>
+autocmd StdinReadPre * let s:std_in=1
+autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
+let NERDTreeQuitOnOpen = 1
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
+
 " Colorscheme
 set t_Co=256
 set background=dark
 colorscheme PaperColor
 
 set colorcolumn=80,100
+
+" Workaround for bug that effects kitty and background color erase
+let &t_ut=''
 
 "lightline config
 let g:lightline = {
@@ -100,6 +115,9 @@ let g:lightline = {
       \   'gitbranch': 'FugitiveHead'
       \ },
       \ }
+
+" Set split to below
+set splitbelow
 
 " Tab sanity
 set expandtab
