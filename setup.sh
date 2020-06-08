@@ -9,7 +9,7 @@ if [ ! -d ~/repos/github/magicmonty/bash-git-prompt ] ; then
 fi
 
 # Install some utilities
-if [ DISTRIBUTION = "Ubuntu" ] ; then
+if [ ${DISTRIBUTION} = "Ubuntu" ] ; then
     apt-get install -y vim awscli ranger
 fi
 
