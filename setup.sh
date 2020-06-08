@@ -11,4 +11,8 @@ if [ ! -d ~/repos/github/magicmonty/bash-git-prompt ] ; then
    git clone https://github.com/magicmonty/bash-git-prompt.git ~/repos/github/magicmonty/bash-git-prompt
 fi
 
+# Update bashrc
+cp ~/.bashrc ~/.bashrc.orig
+sed -i '/# <<< alrix initialise <<</,/# >>> alrix initialise >>>/d' ~/.bashrc
 
+cat .bashrc >> ~/.bashrc

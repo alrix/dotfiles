@@ -1,3 +1,4 @@
+# <<< alrix initialise <<<
 # Setup Terminal
 PROMPT_COMMAND='echo -en "\033]0; $("pwd") \a"'
 
@@ -19,3 +20,4 @@ fi
 
 # Update PATH
 export PATH=~/bin:$PATH
+# >>> alrix initialise >>>
