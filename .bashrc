@@ -2,7 +2,7 @@
 PROMPT_COMMAND='echo -en "\033]0; $("pwd") \a"'
 
 # Setup Bash Prompt
-if [ -f "~/repos/github/magicmonty/bash-git-prompt/gitprompt.sh" ]; then
+if [ -f ~/repos/github/magicmonty/bash-git-prompt/gitprompt.sh ]; then
     GIT_PROMPT_END="\n\h:\W \u\$ "
     # GIT_PROMPT_ONLY_IN_REPO=1
     source ~/repos/github/magicmonty/bash-git-prompt/gitprompt.sh
