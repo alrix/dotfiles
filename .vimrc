@@ -36,6 +36,9 @@ set wildignore+=*.zip,*.tar
 " Remap escape on macbooks with no escape key
 "inoremap jk <Esc>
 
+" Set paste toggle
+set pastetoggle=<F3>
+
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 " Plugin Installation
 "  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
