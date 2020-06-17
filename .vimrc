@@ -39,6 +39,9 @@ set wildignore+=*.zip,*.tar
 " Set paste toggle
 set pastetoggle=<F3>
 
+" Enable mouse scrolling
+set mouse=a
+
 " ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 " Plugin Installation
 "  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
