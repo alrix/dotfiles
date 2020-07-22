@@ -112,7 +112,7 @@ let &t_ut=''
 
 "lightline config
 let g:lightline = {
-      "\ 'colorscheme': 'PaperColor',
+      \ 'colorscheme': 'PaperColor',
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
       \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
